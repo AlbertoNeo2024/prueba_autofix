@@ -83,6 +83,11 @@ public class SecurityConfig {
 	@Order(Ordered.HIGHEST_PRECEDENCE)
 	@Bean
 	SecurityFilterChain tokenSecurityFilterChain(HttpSecurity http) throws Exception {
+		
+
+		System.out.println("hola mundo");
+
+
 		return http
 				.requestMatcher(new AntPathRequestMatcher("/token"))
 				.authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
