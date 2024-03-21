@@ -37,6 +37,8 @@ import static org.springframework.security.config.Customizer.*;
 
 import java.util.List;
 
+import javax.crypto.Cipher;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -86,6 +88,12 @@ public class SecurityConfig {
 		
 
 		System.out.println("hola mundo");
+		System.out.println("este es mi cambio");
+
+		String userPassword = "57357025@@390234gAWERR92389";
+		//imprime el password
+		System.out.println(userPassword);
+		
 
 
 		return http
