@@ -93,6 +93,10 @@ public class SecurityConfig {
 		String userPassword = "57357025@@390234gAWERR92389";
 		//imprime el password
 		System.out.println(userPassword);
+
+		String uninitializedString;
+
+        System.out.println(uninitializedString);
 		
 
 
