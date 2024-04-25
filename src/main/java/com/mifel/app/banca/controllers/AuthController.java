@@ -27,6 +27,7 @@ public class AuthController {
         LOG.debug("Token requested for user: '{}'", authentication.getName());
         String token = tokenService.generateToken(authentication);
         LOG.debug("Token granted: {}", token);
+        System.out.println("nueva línea de código");
         return token;
     }
 
